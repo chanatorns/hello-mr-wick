@@ -1,22 +1,15 @@
 import React from 'react';
 import { Container } from './Layout.styled';
-import Button from '../Button/Button';
-import debounce from 'lodash/debounce';
+import ColumnSelect from '../ColumnSelect';
+import ColumnInput from '../ColumnInput';
+import ColumnResult from '../ColumnResult';
 
-interface Props {}
-
-const fetchSomething = () => {
-  //Store something
-}
-
-const deboounceFetchSomething = debounce(() => fetchSomething(), 500);
-
-const Layout = (props: Props) => {
+const Layout = () => {
   return (
     <Container fluid>
-      <Container>
-        <Button onClick={deboounceFetchSomething}>Fetch me</Button>
-      </Container>
+      <ColumnInput/>
+      <ColumnSelect/>
+      <ColumnResult value={'aaa'}/>
     </Container>
   );
 }

@@ -6,9 +6,10 @@ interface ContainerProps {
 }
 
 export const Container = styled.div<ContainerProps>`
+  display: flex;
   margin: auto;
-  max-width: ${props => props.bgColor ? 'none' : '1000px'};
+  max-width: ${props => props.fluid ? 'none' : '1000px'};
   background-color: ${props => props.bgColor};
   text-align: center;
-  
+  min-width: 600px;
 `;
