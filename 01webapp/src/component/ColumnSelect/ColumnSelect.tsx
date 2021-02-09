@@ -8,8 +8,8 @@ const ColumnSelect = () => {
     { value: 'fibonacci', label: 'isFibonacci' }
   ]
   return (
-    <Column wrapperStyle={{ width: '100%', minWidth: 100 }}>
       <Input.Select options={options}/>
+    <Column wrapperStyle={{ flexGrow: 1, minWidth: 100 }}>
     </Column>
   );
 }
