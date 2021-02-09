@@ -9,7 +9,7 @@ const ColumnResult = (props: Props) => {
   const value = props?.value;
   return (
     <Column wrapperStyle={{ width: 300 }}>
-      {value}
+      {value || ''}
     </Column>
   );
 }

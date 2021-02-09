@@ -1,16 +1,14 @@
 import React from 'react';
+import { InputType } from '../../definition/input';
 
-type OnChange = () => void
-
-interface Props {
+interface Props extends InputType {
   options: {
     value: string | number,
     label: string
   }[]
-  onChange?: OnChange
 }
 
-const Column = (props: Props) => {
+const Select = (props: Props) => {
   const onChange = props?.onChange;
   const options = props?.options;
 
@@ -25,4 +23,4 @@ const Column = (props: Props) => {
   );
 }
 
-export default Column;
+export default Select;

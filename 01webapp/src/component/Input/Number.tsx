@@ -3,12 +3,12 @@ import { InputType } from '../../definition/input';
 
 interface Props extends InputType {}
 
-const Text = (props: Props) => {
+const Number = (props: Props) => {
   const onChange = props?.onChange;
 
   return (
-    <input type='text' onChange={onChange}/>
+    <input type='number' onChange={onChange}/>
   );
 }
 
-export default Text;
+export default Number;
