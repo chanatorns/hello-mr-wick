@@ -7,7 +7,7 @@ import { useWindowSize } from 'react-use';
 
 const fetchCatgories = async (setCat) => {
   const result = await getCategories();
-  setCat(result);
+  setCat(result?.categories || []);
 }
 
 const filterCat = (cat, filter) => {
